@@ -35,7 +35,7 @@
   }
 
   body {
-    @apply font-body text-navy bg-white antialiased;
+    @apply font-body text-navy bg-white antialiased overflow-x-hidden;
   }
 
   h1,
@@ -80,27 +80,27 @@
 
   /* Primary button */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gold text-white font-semibold rounded-xl transition-all duration-300 hover:bg-gold-500 hover:shadow-gold active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
+    @apply inline-flex w-full sm:w-auto items-center justify-center gap-2 px-7 py-3.5 bg-gold text-white font-semibold rounded-xl transition-all duration-300 hover:bg-gold-500 hover:shadow-gold active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
   }
 
   /* Ghost/outline button */
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 border-2 border-navy/20 text-navy font-semibold rounded-xl transition-all duration-300 hover:border-navy hover:bg-navy/5 dark:border-white/20 dark:text-white dark:hover:border-white dark:hover:bg-white/5;
+    @apply inline-flex w-full sm:w-auto items-center justify-center gap-2 px-7 py-3.5 border-2 border-navy/20 text-navy font-semibold rounded-xl transition-all duration-300 hover:border-navy hover:bg-navy/5 dark:border-white/20 dark:text-white dark:hover:border-white dark:hover:bg-white/5;
   }
 
   /* Secondary navy button */
   .btn-navy {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-navy text-white font-semibold rounded-xl transition-all duration-300 hover:bg-navy-600 hover:shadow-premium active:scale-[0.98];
+    @apply inline-flex w-full sm:w-auto items-center justify-center gap-2 px-7 py-3.5 bg-navy text-white font-semibold rounded-xl transition-all duration-300 hover:bg-navy-600 hover:shadow-premium active:scale-[0.98];
   }
 
   /* Section container */
   .section-container {
-    @apply max-w-container mx-auto px-6 lg:px-8;
+    @apply max-w-container mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   /* Section spacing */
   .section-padding {
-    @apply py-24 lg:py-32;
+    @apply py-16 sm:py-20 lg:py-32;
   }
 
   /* Masonry columns */
@@ -279,7 +279,7 @@
 
   /* Hero slider */
   .hero-slide {
-    @apply absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out;
+    @apply absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out min-h-[320px];
   }
 
   .hero-slide.active {
