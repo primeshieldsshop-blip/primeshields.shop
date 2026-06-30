@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#F7F8FA"/>
+  <rect x="40" y="40" width="720" height="720" rx="24" fill="white" stroke="#E8EDF5" stroke-width="2"/>
+  <!-- Shield shape -->
+  <path d="M400 180 L520 240 L520 400 C520 500 460 560 400 580 C340 560 280 500 280 400 L280 240 Z" fill="#0E2A5A" opacity="0.9"/>
+  <path d="M400 220 L480 265 L480 395 C480 465 440 510 400 525 C360 510 320 465 320 395 L320 265 Z" fill="#C8A04D" opacity="0.85"/>
+  <!-- Star accent -->
+  <circle cx="400" cy="360" r="40" fill="white" opacity="0.3"/>
+  <text x="400" y="680" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#0E2A5A" opacity="0.5">Prime Shields</text>
+  <text x="400" y="710" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#C8A04D" opacity="0.7">Replace with product image</text>
+</svg>
