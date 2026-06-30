@@ -9,8 +9,8 @@ export function initCounters() {
   const aboutImage = document.getElementById('about-image');
 
   if (aboutImage) {
-    aboutImage.src = 'assets/images/acrylic-shields.jpg';
-    aboutImage.alt = 'Prime Shields acrylic shields';
+    aboutImage.src = 'assets/images/glass-awards.png';
+    aboutImage.alt = 'Prime Shields modern glass awards';
     aboutImage.loading = 'lazy';
   }
 

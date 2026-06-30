@@ -293,11 +293,34 @@
 
   /* Image hover zoom */
   .img-hover-zoom {
-    @apply overflow-hidden rounded-2xl;
+    @apply relative w-full rounded-2xl block;
+    min-height: 420px;
+  }
+
+  @media (min-width: 1024px) {
+    .img-hover-zoom {
+      min-height: 560px;
+    }
+  }
+
+  .about-image-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(14, 42, 90, 0.05));
+  }
+
+  .about-image-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at top left, rgba(200, 160, 77, 0.18), transparent 28%), radial-gradient(circle at bottom right, rgba(14, 42, 90, 0.14), transparent 24%);
   }
 
   .img-hover-zoom img {
-    @apply transition-transform duration-500 ease-out;
+    @apply absolute inset-0 block w-full h-full object-cover object-center transition-transform duration-500 ease-out;
   }
 
   .img-hover-zoom:hover img {

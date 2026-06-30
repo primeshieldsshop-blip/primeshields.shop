@@ -82,7 +82,7 @@ function renderProducts(grid) {
     .map(
       (product, i) => `
     <article
-      class="product-card group cursor-pointer card-hover-lift bg-white dark:bg-navy-800 rounded-2xl overflow-hidden border border-navy/5 dark:border-white/10 ${i % 3 === 1 ? 'lg:mt-8' : ''}"
+      class="product-card group cursor-pointer card-hover-lift bg-white dark:bg-navy-800 rounded-2xl overflow-hidden border border-navy/5 dark:border-white/10"
       data-animate="fade-up"
       style="animation-delay: ${(i % 6) * 0.08}s"
       data-product-id="${product.id}"
