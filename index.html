@@ -28,7 +28,7 @@
   <meta property="og:description"
     content="Premium trophies, awards, medals, corporate gifts, acrylic awards, crystal awards, and custom engraving across Pakistan.">
   <meta property="og:url" content="https://primeshields.shop/">
-  <meta property="og:image" content="https://primeshields.shop/assets/images/acrylic-shields.jpg">
+  <meta property="og:image" content="https://primeshields.shop/assets/images/acrylic-shields.png">
   <meta property="og:image:alt" content="Premium Prime Shields acrylic trophies and awards">
   <meta property="og:site_name" content="Prime Shields">
 
@@ -37,7 +37,7 @@
   <meta name="twitter:title" content="Prime Shields | Premium Awards & Trophies">
   <meta name="twitter:description"
     content="Premium trophies, awards, medals, corporate gifts, acrylic awards, crystal awards, and custom engraving across Pakistan.">
-  <meta name="twitter:image" content="https://primeshields.shop/assets/images/acrylic-shields.jpg">
+  <meta name="twitter:image" content="https://primeshields.shop/assets/images/acrylic-shields.png">
   <meta name="twitter:image:alt" content="Premium Prime Shields awards and trophies">
 
   <!-- Fonts -->
@@ -169,8 +169,8 @@
       <div class="section-container flex items-center justify-between">
         <!-- Logo -->
         <a href="#home" class="flex items-center gap-3 group" aria-label="Prime Shields — Home">
-          <img src="assets/icons/Prime-Shields-Icons.jpg" alt="Prime Shields icon"
-            class="w-10 h-10 rounded-full object-cover transition-transform duration-300 group-hover:scale-105"
+          <img id="navbar-logo" src="assets/icons/Prime-Shields-Icons.jpg" alt="Prime Shields icon"
+            class="navbar-logo w-10 h-10 rounded-full object-cover transition-transform duration-300 group-hover:scale-105"
             width="40" height="40" />
           <div>
             <span class="font-heading font-bold text-lg text-navy dark:text-white leading-tight block">Prime
@@ -254,15 +254,18 @@
     <!-- About Section -->
     <section id="about" class="section-padding bg-gray-light dark:bg-navy-800/50">
       <div class="section-container">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div class="about-image-frame img-hover-zoom rounded-3xl shadow-premium-lg" data-animate="fade-left">
-            <img id="about-image" src="" alt="" class="w-full aspect-[4/3] object-cover rounded-3xl" width="600"
-              height="450">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+          <div class="about-image-frame rounded-3xl shadow-premium-lg lg:h-full" data-animate="fade-left">
+            <div class="img-hover-zoom aspect-[4/3] lg:aspect-auto lg:h-full min-h-0 rounded-3xl overflow-hidden">
+              <img id="about-image" src="" alt="" class="w-full h-full object-cover object-center" width="600"
+                height="450">
+            </div>
           </div>
           <div>
             <span class="section-label" data-animate="fade-up">Who We Are</span>
             <h2 class="text-3xl lg:text-4xl font-heading font-bold text-navy dark:text-white mb-6"
-              data-animate="fade-up">About Prime Shields</h2>
+              data-animate="fade-up">
+              About Prime Shields</h2>
             <p class="text-navy/70 dark:text-white/70 leading-relaxed mb-4" data-animate="fade-up">
               Prime Shields is a Karachi-based manufacturer and supplier of premium trophies, shields, medals,
               souvenirs, corporate gifts, acrylic awards, crystal awards and executive recognition products.
@@ -452,8 +455,8 @@
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
           <a href="#home" class="flex items-center gap-3 mb-6">
-            <img src="./assets/images/Logo - Prime - Shields.jpg" alt="Prime Shields logo"
-              class="w-10 h-10 rounded-full object-cover" width="40" height="40">
+            <img id="footer-logo" src="./assets/images/Logo - Prime - Shields.jpg" alt="Prime Shields logo"
+              class="footer-logo w-10 h-10 rounded-full object-cover" width="40" height="40">
             <div>
               <span class="font-heading font-bold text-lg leading-tight block">Prime Shields</span>
               <span class="text-[10px] uppercase tracking-[0.25em] text-gold font-semibold">Premium Awards</span>
@@ -482,8 +485,10 @@
         </div>
       </div>
 
-      <div class="border-t border-white/10 pt-8 text-center text-white/40 text-sm">
+      <div class="border-t border-white/10 pt-8 text-center text-white/40 text-sm space-y-2">
         <p>&copy; <span id="footer-year"></span> Prime Shields. All rights reserved.</p>
+        <p>Development by love and craftsmanship — <a href="https://codixr.com" target="_blank"
+            rel="noopener noreferrer" class="text-gold hover:underline">codixr.com</a></p>
       </div>
     </div>
   </footer>
@@ -530,7 +535,8 @@
       </svg>
     </button>
     <div class="text-center">
-      <img id="lightbox-image" class="lightbox-image cursor-zoom-in" src="" alt="" width="1200" height="800">
+      <img id="lightbox-image" class="lightbox-image lightbox-preview cursor-zoom-in" src="" alt="" width="1200"
+        height="800">
       <p id="lightbox-caption" class="text-white/80 mt-4 text-lg font-medium"></p>
     </div>
   </div>

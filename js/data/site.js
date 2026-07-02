@@ -23,7 +23,7 @@ export const siteConfig = {
     facebook: 'https://www.facebook.com/PrimeShields/',
     instagram: 'https://www.instagram.com/primeshield.pk/',
     linkedin: 'https://www.linkedin.com/company/prime-shield/',
-    youtube: '#',
+    whatsapp: 'https://wa.me/923232051970',
   },
 };
 

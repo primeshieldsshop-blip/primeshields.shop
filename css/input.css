@@ -291,17 +291,32 @@
     @apply bg-white/70 dark:bg-navy-800/70 backdrop-blur-md border border-white/50 dark:border-white/10 rounded-xl px-4 py-2.5 shadow-premium text-sm font-medium flex items-center gap-2;
   }
 
-  /* Image hover zoom */
+  /* Image hover zoom base styles (shared behavior only) */
   .img-hover-zoom {
-    @apply relative w-full rounded-2xl block;
-    min-height: 420px;
+    @apply relative w-full rounded-2xl block overflow-hidden bg-white/80 dark:bg-navy-900/70;
+    min-height: 0;
   }
 
-  @media (min-width: 1024px) {
-    .img-hover-zoom {
-      min-height: 560px;
-    }
+  /* Hero image wrappers: unique slide wrappers can override spacing independently */
+  .hero-slide-wrapper {
+    @apply w-full h-full overflow-hidden;
   }
+
+  /* About section image wrapper */
+  #about-image-wrapper {
+    @apply w-full h-full;
+  }
+
+  /* Gallery image wrappers: each item has its own ID/class */
+  .gallery-image-wrapper {
+    @apply w-full h-full;
+  }
+
+  /* Product image wrappers: each product has its own ID/class */
+  .product-image-wrapper {
+    @apply w-full h-full;
+  }
+
 
   .about-image-frame {
     position: relative;
@@ -320,7 +335,8 @@
   }
 
   .img-hover-zoom img {
-    @apply absolute inset-0 block w-full h-full object-cover object-center transition-transform duration-500 ease-out;
+    @apply block w-full h-full object-cover object-center transition-transform duration-500 ease-out;
+    display: block;
   }
 
   .img-hover-zoom:hover img {

@@ -45,8 +45,8 @@ function renderGallery(grid) {
       role="button"
       aria-label="View ${item.title} in lightbox"
     >
-      <div class="img-hover-zoom ${heights[i % heights.length]} rounded-2xl shadow-premium overflow-hidden relative">
-        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover" loading="lazy" width="400" height="500" />
+      <div class="img-hover-zoom ${heights[i % heights.length]} rounded-2xl shadow-premium overflow-hidden relative bg-white/70">
+        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover object-center" loading="lazy" width="400" height="500" />
         <div class="absolute inset-0 bg-navy/0 group-hover:bg-navy/40 transition-all duration-300 flex items-end p-4">
           <span class="text-white font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">${item.title}</span>
         </div>

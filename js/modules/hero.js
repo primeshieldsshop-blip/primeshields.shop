@@ -63,22 +63,22 @@ function renderSlider(container) {
   container.innerHTML = `
     <div id="hero-parallax" class="relative w-full aspect-[4/5] lg:aspect-square max-h-[600px]">
       ${heroSlides
-        .map(
-          (slide, i) => `
+      .map(
+        (slide, i) => `
         <div class="hero-slide ${i === 0 ? 'active' : ''}" data-index="${i}">
           <div class="img-hover-zoom h-full rounded-3xl shadow-premium-lg">
             <img
               src="${slide.image}"
               alt="${slide.title} — Prime Shields premium awards"
-              class="w-full h-full object-cover rounded-3xl"
+              class="w-full h-full object-cover object-center rounded-3xl"
               ${i === 0 ? 'fetchpriority="high"' : 'loading="lazy"'}
               width="600"
               height="600"
             />
           </div>
         </div>`
-        )
-        .join('')}
+      )
+      .join('')}
       <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2" id="hero-dots" role="tablist" aria-label="Hero slides">
         ${heroSlides.map((_, i) => `<button class="w-2 h-2 rounded-full transition-all duration-300 ${i === 0 ? 'bg-gold w-6' : 'bg-white/60'}" data-dot="${i}" role="tab" aria-label="Slide ${i + 1}" aria-selected="${i === 0}"></button>`).join('')}
       </div>

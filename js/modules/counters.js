@@ -9,7 +9,7 @@ export function initCounters() {
   const aboutImage = document.getElementById('about-image');
 
   if (aboutImage) {
-    aboutImage.src = 'assets/images/glass-awards.png';
+    aboutImage.src = 'assets/images/Plate1.jpeg';
     aboutImage.alt = 'Prime Shields modern glass awards';
     aboutImage.loading = 'lazy';
   }

@@ -90,8 +90,8 @@ function renderProducts(grid) {
       role="button"
       aria-label="View ${product.title}"
     >
-      <div class="img-hover-zoom aspect-[4/3]">
-        <img src="${product.image}" alt="${product.title}" class="w-full h-full object-cover" loading="lazy" width="400" height="300" />
+      <div class="img-hover-zoom aspect-[4/3] bg-white/70">
+        <img src="${product.image}" alt="${product.title}" class="w-full h-full object-cover object-center" loading="lazy" width="400" height="300" />
       </div>
       <div class="p-6">
         <span class="text-xs font-semibold uppercase tracking-wider text-gold">${product.category}</span>
@@ -124,8 +124,8 @@ function openModal(productId) {
   const waUrl = `https://wa.me/${siteConfig.whatsapp}?text=${waMessage}`;
 
   content.innerHTML = `
-    <div class="img-hover-zoom rounded-xl overflow-hidden mb-6">
-      <img src="${product.image}" alt="${product.title}" class="w-full aspect-video object-cover" width="800" height="450" />
+    <div class="img-hover-zoom rounded-xl overflow-hidden mb-6 bg-white/70">
+      <img src="${product.image}" alt="${product.title}" class="w-full aspect-video object-cover object-center" width="800" height="450" />
     </div>
     <span class="section-label">${product.category}</span>
     <h3 class="text-2xl font-heading font-bold text-navy dark:text-white mb-4">${product.title}</h3>
